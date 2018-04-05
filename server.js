@@ -1,10 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const sgMail = require('@sendgrid/mail');
+require('dotenv').config();
+
 const app = new express();
 
-var SG_API_KEY = require('./config.js');
-
+const { SG_API_KEY } = process.env;
 sgMail.setApiKey(SG_API_KEY);
 
 app.use(bodyParser.json());
@@ -28,8 +29,8 @@ app.get('/portfolio/:project', (req, res) => {
 app.post('/contact', (req, res) => {
   const { firstName, lastName, email, message } = req.body;
   res.render('index', {
-    title: 'Thanks ' + firstName,
-    firstName: firstName,
+    title: `Thanks ${firstName}`,
+    firstName,
     mailSent: true
   });
   const msg = {
@@ -44,9 +45,9 @@ app.post('/contact', (req, res) => {
 app.get('*', (req, res) => {
   res.send('Page not found 404').status(404);
 });
-
 const port = process.env.PORT || 8080;
 
+/* eslint no-console: 0 */
 app.listen(port, () => {
-  console.log('Server is listening on ' + port);
+  console.log(`Server is listening on ${port}`);
 });

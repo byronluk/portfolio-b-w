@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb-base",
+  "plugins": ["html"],
+  "rules": {
+    "linebreak-style": 0,
+    "new-cap": 0,
+    "comma-dangle": 0,
+    "object-curly-newline": 0
+  }
+}
