@@ -37,8 +37,9 @@ p.social.text-left {
   text-align: left;
 }
 
-div.view-projects-container {
-  top: 65vh;
+.view-projects-container {
+  position: relative;
+  top: 10vh;
 }
 
 .view-projects {
@@ -52,4 +53,17 @@ div.view-projects-container {
   color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   text-decoration: none;
+}
+.view-projects:link {
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  text-decoration: none;
+}
+.view-projects:active {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.view-projects:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
 }
