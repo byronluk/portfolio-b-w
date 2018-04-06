@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="no-js">
+<% include ../../partials/projects/project-head %>
+
+  <body>
+    <% var active = 'productive'; %>
+      <% include ../../partials/projects/project-nav %>
+        <main class="project-page">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12 col-lg-8">
+                    <h2 class="heading">Productive</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img class="img-responsive project-img" src="../img/projects/productive/create-habit.png" alt="productive create habit form"
+                    />
+                  </div>
+                  <div class="col-sm-7">
+                    <div>
+                      <p class="lead">Summary</p>
+                      <p>I'm working on a productivity tracker that can keep track of reoccurring habits and one-time todos.
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p class="lead">Technologies</p>
+                      <p>
+                        I'm using React and Redux for the front-end and using Firebase for my back-end database, data queries, and web hosting. My
+                        server is built with Node.js / Express and I am utilizing Flow for static type checking.
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p class="lead">Resources</p>
+                      <ul class="resources">
+                        <li>You can view my progress live at
+                          <a class="btn btn-sm btn-primary" href="https://productive-483e5.firebaseapp.com/" target="_blank">Productive</a>
+                        </li>
+                        <li>
+                          View my code on
+                          <a class="btn btn-m btn-primary" href="https://github.com/byronluk/productive" target="_blank">Github</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+        <% include ../../partials/projects/project-scripts %>
+  </body>
+
+</html>

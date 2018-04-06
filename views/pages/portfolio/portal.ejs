@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js">
+<% include ../../partials/projects/project-head %>
+
+  <body>
+    <% var active = 'portal'; %>
+      <% include ../../partials/projects/project-nav %>
+        <main class="project-page">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12 col-lg-8">
+                    <h2 class="heading">Portal</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img class="img-responsive project-img" src="../img/projects/portal/home-normal.png" alt="Screenshot of Portal Website" />
+                    <img class="img-responsive project-img" src="../img/projects/portal/search-user.png " alt="Screenshot of Portal Website"
+                    />
+                    <img class="img-responsive project-img" src="../img/projects/portal/log-in.png " alt="Screenshot of Portal Website" />
+                    <img class="img-responsive project-img" src="../img/projects/portal/edit-project.png " alt="Screenshot of Portal Website"
+                    />
+                  </div>
+                  <div class="col-sm-7">
+                    <div>
+                      <p class="lead">Summary</p>
+                      <p>
+                        Throughout this project, I dug deeper into the facets of Loopback, React, Redux, and React-Router. Our goal at the end of
+                        this project was to enable students to sign up, edit their profiles, and allow employers to search
+                        for students by name. Students were also able to add their work experience, education, and projects.
+                        The core features I focused on were setting up the database, enabling authentication, implementing
+                        the search bar, calculating a student’s profile strength, and allowing students to edit their information.
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p class="lead">Technologies</p>
+                      <p>
+                        The front-end stack used to create our minimal viable product were React, Redux, and React-Router; styling and design was
+                        implemented using Boostrap V4. For our back-end, we utilized MongoDB and mLabs for our database and
+                        our API was built on top of Loopback and Express (Node.js). I implemented our routes and views with
+                        Express and EJS templates for signing up or logging in. These were done in concurrence with user
+                        authentication, where a user can log in or sign up with their email or with their GitHub account.
+                        I used Passport.js and the loopback-component-passport module to handle the heavy lifting with managing
+                        access tokens, handling handshakes, and keeping track of user identities.
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p class="lead">Authentication</p>
+                      <p>
+                        I gained a vast amount of insight working on user authentication. Where logging into your account seems to be such a small
+                        portion of a user’s experience, but also one of the most crucial. Spending time thinking about how
+                        to manage multiple users allowed me to deepen my understanding of databases and relations. I set
+                        up a base user model that focused on handling authentication and then after a user is authenticated,
+                        queried the appropriate user type model for user specific information. Working on the back-end also
+                        allowed me to learn about ACL’s and handling multiple roles with an organization.
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p class="lead">Reflection</p>
+                      <p>
+                        After completing this 3-week project, it has solidified my knowledge of working on full stack applications. We utilized various
+                        open source npm modules – one favorite being redux-forms. Redux-forms allowed us to easily manage
+                        our form state and ensure that our input fields were controlled, as recommended by react standards.
+                      </p>
+                      <p>
+                        Some of the things that I’m learning or planning to implement in future projects: Flow or another static type checker for
+                        JavaScript, TDD approach to programming – probably with Jest and Enzyme, and GraphQL as an alternative
+                        to REST APIs.
+                      </p>
+                    </div>
+                    <div>
+                      <p class="lead">Resources</p>
+                      <ul class="resources">
+                        <li>You can view this project live at
+                          <a class="btn btn-sm btn-primary" href="https://origin-portal.herokuapp.com/" target="_blank">Portal</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+        <% include ../../partials/projects/project-scripts %>
+  </body>
+
+</html>
