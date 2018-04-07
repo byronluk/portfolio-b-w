@@ -2,7 +2,7 @@
 <% include ../../partials/projects/project-head %>
 
   <body>
-    <% var active = 'weatherapp'; %>
+    <% var active = 'writeletters'; %>
       <% include ../../partials/projects/project-nav %>
         <main class="project-page">
           <div class="container">
@@ -10,36 +10,35 @@
               <div class="col-md-12">
                 <div class="row">
                   <div class="col-md-12 col-lg-8">
-                    <h2 class="heading">Weather App</h2>
+                    <h2 class="heading">Write Letters</h2>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-5">
-                    <img class="project-img img-responsive" src="../img/projects/weather-app/color.png" alt="weather app project" />
-                    <img class="project-img img-responsive" src="../img/projects/weather-app/history.png" alt="weather app project" />
+                    <img class="project-img img-responsive" src="../img/projects/write-letters/spellcheck.png" alt="Write letters project" />
+                    <img class="project-img img-responsive" src="../img/projects/write-letters/updated.png" alt="write letters project" />
                   </div>
                   <div class="col-sm-7">
                     <div>
                       <p class="lead">Summary</p>
                       <p>
-                        A simple application to check the weather utilizing the Open Weather Map API. A fun feature that I implemented was the search
-                        history. When a user searches for a city, a timestamp is created in the history component. Also,
-                        buttons are created for the 5 most recent searches allowing a user to easily click and see the weather
-                        in that city.
+                        My hackathon submission for Origin Code Academy. I had 72 hours to build a project utilizing two distinct APIs. For this
+                        project, I utilized Azure Spellcheck API and Handwriting.io Handwriting API. My goal was to allow
+                        users to spellcheck their text and while they typed there was a live conversion to handwriting.
                       </p>
                     </div>
                     <hr />
                     <div>
                       <p class="lead">Technologies</p>
                       <p>
-                        Front End: React / Redux / HTML5 / CSS3
+                        Front End: React / HTML5 / CSS3 / Bing Spellcheck API / Handwriting.io API
                       </p>
                       <p>
                         Back End: Node.js / Express
                       </p>
                       <p>
-                        I dug deeper into Redux in this project and gained a stronger understanding of the flow of actions, reducers, and the store.
-                        I was also introduced to Redux promise middleware - when a promise is dispatched from an action creator.
+                        I learned about the debounce function, which I imported from lodash. It allowed me to convert the text to handwriting live
+                        and also reduce the payload on the server by delaying GET requests.
                       </p>
                     </div>
                     <hr />
@@ -47,10 +46,10 @@
                       <p class="lead">Resources</p>
                       <ul class="resources">
                         <li>You can view this project live at
-                          <a class="btn btn-sm btn-primary" href="https://basic-weather-application.herokuapp.com/" target="_blank">Weather App</a>
+                          <a class="btn btn-sm btn-primary" href="https://write-letters-byronluk.herokuapp.com/" target="_blank">Write Letters</a>
                         </li>
                         <li>View my code on
-                          <a class="btn btn-sm btn-primary" href="https://github.com/byronluk/redux-weather-application" target="_blank">Github</a>
+                          <a class="btn btn-sm btn-primary" href="https://github.com/byronluk/write-letters" target="_blank">Github</a>
                         </li>
                       </ul>
                     </div>

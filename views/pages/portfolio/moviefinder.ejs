@@ -1,0 +1,69 @@
+<html class="no-js">
+<% include ../../partials/projects/project-head %>
+
+  <body>
+    <% var active = 'moviefinder'; %>
+      <% include ../../partials/projects/project-nav %>
+        <main class="project-page">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12 col-lg-8">
+                    <h2 class="heading">Movie Finder</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img class="project-img img-responsive" src="../img/projects/movie-finder/search.png" alt="hot homes website" />
+                    <img class="project-img img-responsive" src="../img/projects/movie-finder/details.png" alt="hot homes website" />
+                  </div>
+                  <div class="col-sm-7">
+                    <div>
+                      <p class="lead">Summary</p>
+                      <p>
+                        This project was built to practice with React-Router and handle multiple routes within a single-page application. Working
+                        on this solidified my knowledge of React and Redux. I utilized OMDB's API to handle the movie details
+                        and implemented a cache to store the details for the most recent movies viewed.
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p class="lead">Technologies</p>
+                      <p>
+                        Front End: React / Redux / React-Router / HTML5 / CSS3
+                      </p>
+                      <p>
+                        Back End: Node.js / Express
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p class="lead">Search Page</p>
+                      <p>Implementing the search bar feature was done through sending a GET request to the OMDB API with parameters
+                        for an array of the movies that match the search criteria. Once the response from the server is received,
+                        the results are displayed on the screen through mapping over the array and displaying each item in
+                        a container with the name, image, and a link for more details.
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p class="lead">Resources</p>
+                      <ul class="resources">
+                        <li>You can view this project live at
+                          <a class="btn btn-sm btn-primary" href="https://bl-movie-finder.herokuapp.com/" target="_blank">Movie Finder</a>
+                        </li>
+                        <li>View my code on
+                          <a class="btn btn-sm btn-primary" href="https://github.com/byronluk/react-movie-finder" target="_blank">Github</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+        <% include ../../partials/projects/project-scripts %>
+  </body>
+
+</html>
